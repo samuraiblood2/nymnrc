@@ -1,0 +1,25 @@
+<article id="contact">
+	<h2 class="major">Contact</h2>
+	<!--<span class="image main"><img src="{{ site.images }}/pic03.jpg" alt="" /></span>-->
+	<hr>
+	<b>Find us on Google!<b><br>
+	580 5th ave suite 1100,<br>
+	New York, N.Y., 10036<br>
+	<br>
+                                        <br></p>
+                                            <p><b>Executives</b><br>
+                                            {% for executive in site.data.company_info.executives %}
+                                                {{ executive.title }}: {{ executive.name }}<br>
+                                                {% if executive.email %}
+                                                    {{ executive.email }}<br>
+                                                {% endif %}
+                                                {% if executive.additional_email %}
+                                                    {{ executive.additional_email }}<br>
+                                                {% endif %}
+                                                {% if executive.phone %}
+                                                    {{ executive.phone }}<br>
+                                                {% endif %}
+                                                <br>
+                                            {% endfor %}
+                                            </p>
+</article>

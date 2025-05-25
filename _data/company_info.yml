@@ -1,0 +1,14 @@
+executives:
+  - name: Michael Citarelli
+    title: Chief Executive Officer
+    email: michael@nymnrc.com
+    additional_email: nymnrc@gmail.com
+    phone: "+1(917)-669-7537"
+  - name: David Citarelli
+    title: Chief Financial Officer
+    phone: "+1(802)-829-1500"
+  - name: Nicholas Citarelli
+    title: Chief Technical Officer
+    phone: "+1(802)-4880-9631"
+  - name: James Citarelli
+    title: Operations Manager

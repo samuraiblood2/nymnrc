@@ -24,8 +24,9 @@
 				
 				<nav>
 					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						{% for link in site.navigation_links %}
+							<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+						{% endfor %}
 					</ul>
 				</nav>
 			</header>
@@ -34,39 +35,10 @@
 			<div id="main">
 				
 				<!-- About -->
-				<article id="about">
-					<h2 class="major">About</h2>
-					<span class="image main"><img src="{{ site.images }}/lux-1.jpg" alt="" /></span>
-					<p>Located at 580, 5th avenue in Manhattan NY, our operation are centerally located in the heart of the diamond district in New York City. NYMNRC has been dealing in diamonds for the better part of a century. Founded in 1923, we have been helping clients succesfully buy and sell diamonds for nearly a century. We have experience expediting the sale of polished stones locally as well as abroad. We have experience in countries such as India, Isreal, Belgium, and Guinea.</p>
-				</article>
+				{% include about_section.html %}
 				
 				<!-- Contact -->
-				<article id="contact">
-					<h2 class="major">Contact</h2>
-					<!--<span class="image main"><img src="{{ site.images }}/pic03.jpg" alt="" /></span>-->
-					<hr>
-					<b>Find us on Google!<b><br>
-					580 5th ave suite 1100,<br>
-					New York, N.Y., 10036<br>
-					<br>
-                                        <br></p>
-                                            <p><b>Executives</b><br>
-                                            Chief Executive Officer: Michael Citarelli<br>
-                                            mcitarelli@nymnrc.com<br>
-                                            +1(917)-669-7537<br>
-                                            <br>
-                                            Chief Financial Officer: David Citarelli<br>
-                                            dcitarelli@nymnrc.com<br>
-                                            +1(802)-829-1500<br>
-                                            <br>
-                                            Chief Technical Officer: Nicholas Citarelli<br>
-                                            ncitarelli@nymnrc.com<br>
-                                            +1(802)-4880-9631<br>
-                                            <br>
-                                            Operations Manager: James Citarelli<br>
-                                            jcitarelli@nymnrc.com<br>
-					</br></p>
-				</article>
+				{% include contact_section.html %}
 			</div>
 		
 			<!-- Footer -->

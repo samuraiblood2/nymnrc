@@ -18,3 +18,10 @@ sass:
 
 exclude:
   - README.MD
+
+# Navigation Links
+navigation_links:
+  - title: About
+    url: "#about"
+  - title: Contact
+    url: "#contact"
